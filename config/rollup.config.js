@@ -1,7 +1,7 @@
 export default function (config) {
   return {
-    name: 'turndownPluginGfm',
-    input: 'src/gfm.js',
+    name: 'turndownPluginPolarBear',
+    input: 'src/polar-bear.js',
     output: config.output
   }
 }

@@ -3,6 +3,6 @@ import config from './rollup.config'
 export default config({
   output: {
     format: 'cjs',
-    file: 'lib/turndown-plugin-gfm.cjs.js'
+    file: 'lib/turndown-plugin-polar-bear.cjs.js'
   }
 })
