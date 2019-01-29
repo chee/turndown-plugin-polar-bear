@@ -1,13 +1,15 @@
 # turndown-plugin-gfm
 
-A [Turndown](https://github.com/domchristie/turndown) plugin which adds GitHub Flavored Markdown extensions.
+A [Turndown](https://github.com/domchristie/turndown) plugin which adds
+extensions for [Polar Bear](https://bear.app/faq/Markup%20:%20Markdown/Polar%20Bear%20markup%20language/), 
+the markdown inspired markup language created for [bear.app](https://bear.app/)
 
 ## Installation
 
 npm:
 
 ```
-npm install turndown-plugin-gfm
+npm install turndown-plugin-polar-bear
 ```
 
 Browser:
@@ -22,11 +24,11 @@ Browser:
 ```js
 // For Node.js
 var TurndownService = require('turndown')
-var turndownPluginGfm = require('turndown-plugin-gfm')
+var turndownPluginPolarBear = require('turndown-plugin-polar-bear')
 
-var gfm = turndownPluginGfm.gfm
+var bear = turndownPluginPolarBear.bear
 var turndownService = new TurndownService()
-turndownService.use(gfm)
+turndownService.use(bear)
 var markdown = turndownService.turndown('<strike>Hello world!</strike>')
 ```
 
@@ -47,4 +49,5 @@ turndownService.use(tables)
 
 ## License
 
-turndown-plugin-gfm is copyright © 2017+ Dom Christie and released under the MIT license.
+turndown-plugin-polar-bear is copyright © 2018+ chee and released under the MIT license.
+it is heavily based on [turndown-plugin-gfm](https://github.com/domchristie/turndown-plugin-gfm)
