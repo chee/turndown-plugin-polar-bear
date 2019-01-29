@@ -1,7 +1,7 @@
 var highlightRegExp = /highlight-(?:text|source)-([a-z0-9]+)/
 
-export default function highlightedCodeBlock (turndownService) {
-  turndownService.addRule('highlightedCodeBlock', {
+export default function githubStyleCodeBlock (turndownService) {
+  turndownService.addRule('githubStyleCodeBlock', {
     filter: function (node) {
       var firstChild = node.firstChild
       return (
@@ -16,9 +16,9 @@ export default function highlightedCodeBlock (turndownService) {
       var language = (className.match(highlightRegExp) || [null, ''])[1]
 
       return (
-        '\n\n' + options.fence + language + '\n' +
-        node.firstChild.textContent +
-        '\n' + options.fence + '\n\n'
+        '\n```' + language + '\n' +
+          node.firstChild.textContent +
+        '\n' + '```\n'
       )
     }
   })
