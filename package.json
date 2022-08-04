@@ -1,7 +1,7 @@
 {
 	"name": "turndown-plugin-polar-bear",
 	"description": "Turndown plugin to add Bear's Polar Bear Markup Language extensions",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "chee rabbits",
 	"main": "lib/turndown-plugin-polar-bear.cjs.js",
 	"module": "lib/turndown-plugin-polar-bear.es.js",
